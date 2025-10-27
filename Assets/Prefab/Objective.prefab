@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreOnCollision
   scoreAmount: 1
+  manager: {fileID: 0}
 --- !u!114 &762708523390301309
 MonoBehaviour:
   m_ObjectHideFlags: 0

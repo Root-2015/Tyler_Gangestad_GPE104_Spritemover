@@ -3,6 +3,7 @@ using UnityEngine;
 public class ScoreOnCollision : MonoBehaviour
 {
     public float scoreAmount;
+    public GameManager manager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +23,7 @@ public class ScoreOnCollision : MonoBehaviour
         if (otherHealth != null)
             {
                 otherHealth.scoreGoal(scoreAmount);
+                manager.realScore = manager.realScore+scoreAmount;
             }
             
     }

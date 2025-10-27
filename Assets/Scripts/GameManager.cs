@@ -7,6 +7,10 @@ public class GameManager : MonoBehaviour
     public DamageOnHit enemy;
     public bool fail;
     public bool win;
+    public float timerMax;
+    public float timeRemaining;
+    public float realScore;
+
 
     void awake(){
             if (manager == null)
@@ -20,7 +24,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        timeRemaining = timerMax;
     }
 
     // Update is called once per frame
@@ -37,4 +41,6 @@ public class GameManager : MonoBehaviour
         win = true;
         }
     }
+
+    public void resetTimer(){}
 }
