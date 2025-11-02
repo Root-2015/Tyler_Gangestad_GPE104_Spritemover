@@ -4,6 +4,7 @@ public class ScoreOnCollision : MonoBehaviour
 {
     public float scoreAmount;
     public GameManager manager;
+    public AudioSource audio;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +25,7 @@ public class ScoreOnCollision : MonoBehaviour
             {
                 otherHealth.scoreGoal(scoreAmount);
                 manager.realScore = manager.realScore+scoreAmount;
+                audio.Play();
             }
             
     }

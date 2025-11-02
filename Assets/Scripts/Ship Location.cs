@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ShipLocation : MonoBehaviour
 {
+    public Hero bar;
     public Hero pawn;
     public Transform location;
     public float moveSpeed;
@@ -37,7 +38,8 @@ public class ShipLocation : MonoBehaviour
      
      if (Input.GetKey(KeyCode.A))
         if (Input.GetKey(KeyCode.LeftShift))
-         {pawn.NegativeRotate(pawn.rotateSpeed*pawn.turbo);}
+         {pawn.NegativeRotate(pawn.rotateSpeed*pawn.turbo);
+         bar.rotate(pawn.rotateSpeed*pawn.turbo);}
         else{pawn.NegativeRotate(pawn.rotateSpeed);}
      
      if (Input.GetKey(KeyCode.D))

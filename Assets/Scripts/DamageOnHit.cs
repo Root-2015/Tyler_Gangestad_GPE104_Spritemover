@@ -23,7 +23,9 @@ public class DamageOnHit : MonoBehaviour
         Health otherHealth = other.gameObject.GetComponent<Health>();
         if (isInstaKill == true)
             {
-            Destroy(other.gameObject);
+            Death death = other.gameObject.GetComponent<Death>();
+            if (death != false)
+                death.Die();
             }
         if (otherHealth != null)
             {
