@@ -70,7 +70,7 @@ public class ShipLocation : MonoBehaviour
          {pawn.moveRight(pawn.moveSpeed*pawn.turbo*100);}
         else 
         {pawn.moveRight(pawn.moveSpeed*100);}
-     }
+    }
     
 
         
